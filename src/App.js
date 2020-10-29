@@ -14,9 +14,10 @@ function App() {
       )
       .then((res) => {
         setCoins(res.data);
+        console.log(res.data);
       })
       .catch((error) => {
-        alert("Error! Error! Error! Cannot find Any Data");
+        alert(error);
       });
   }, []);
 
